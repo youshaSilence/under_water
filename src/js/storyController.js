@@ -48,7 +48,12 @@ function nextDialogue() {
 function makeStory() {
     global.dialogueBranch = 0;
 
-    nextDialogue();
+    const buttonTag = document.getElementById("startGame");
+    buttonTag.onclick = () => {
+        nextDialogue();
+        const startBlockTag = document.getElementById("startContent");
+        startBlockTag.remove();
+    };
 }
 
 export default makeStory;
