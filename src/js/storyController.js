@@ -10,7 +10,13 @@ function nextDialogue() {
 
         let phraseTag = document.createElement("p");
         if (storyText[i].text.length) {
-            let text = document.createTextNode(`${storyText[i].author}: ${storyText[i].text}\n`);
+            let text;
+            if (storyText[i].author == "player") {
+                text = document.createTextNode(`Ты: ${storyText[i].text}\n`);
+            } else {
+                text = document.createTextNode(`${storyText[i].author}: ${storyText[i].text}\n`);
+            }
+            
             phraseTag.appendChild(text);
             storyContentDiv.appendChild(phraseTag);
         }
@@ -30,7 +36,12 @@ function nextDialogue() {
                     }
 
                     let phraseTag = document.createElement("p");
-                    let text = document.createTextNode(`${storyText[i].author}: ${storyText[i].answers[j].text}\n`);
+                    let text;
+                    if (!storyText[i].answers[j].actionDescription) {
+                        text = document.createTextNode(`Ты: ${storyText[i].answers[j].text}\n`);
+                    } else {
+                        text = document.createTextNode(storyText[i].answers[j].actionDescription);
+                    }
                     phraseTag.appendChild(text);
                     storyContentDiv.appendChild(phraseTag);
 
