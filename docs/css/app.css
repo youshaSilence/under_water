@@ -1,0 +1,342 @@
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \******************************************************************************************************************************************************/
+/* By Athlon Front-End Team */
+/* Core variables */
+/**
+ * Variables
+*/
+/* Typography */
+/* Breakpoints */
+/* Paths */
+/* Grid setup */
+/* Colour palette */
+/* Components */
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+main {
+  display: block;
+}
+
+audio,
+canvas,
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* CSS print */
+/**
+ * Print Stylesheet
+*/
+@media print {
+  @page {
+    margin: 1cm;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  a {
+    page-break-inside: avoid;
+  }
+  blockquote {
+    page-break-inside: avoid;
+  }
+  table,
+pre {
+    page-break-inside: avoid;
+  }
+  ul, ol, dl {
+    page-break-before: avoid;
+  }
+}
+/* Fonts */
+/**
+ * Fonts
+*/
+@font-face {
+  font-family: "DINP-R";
+  src: url(../images/design/DINPro-Regular.2ac4eb.eot) format("eot"), url(../images/design/DINPro-Regular.7b307e.woff) format("woff"), url(../images/design/DINPro-Regular.f8ce19.ttf) format("truetype");
+  font-style: normal;
+}
+/* Mixins, helpers and functions */
+/**
+ * Helper mixins
+*/
+/* Vendor */
+/* Components */
+/* Browser specific styles */
+/**
+ * Dirty hacks, yes internet explorer, we are looking at you
+*/
+/* My Page styles for this story*/
+body {
+  background: rgb(1, 9, 11);
+  color: #fff;
+  font-family: "DINP-R", arial, serif;
+  font-size: 1.3em;
+  display: flex;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: hidden;
+  height: 99.8vh;
+}
+
+content {
+  margin: auto;
+  width: 640px;
+  height: 100%;
+  display: flex;
+}
+
+title-image {
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+#titleImage {
+  background-image: url(https://via.placeholder.com/384x256);
+  width: 384px;
+  height: 256px;
+  margin: 64px auto;
+}
+
+#startContent {
+  margin: auto;
+  text-align: center;
+}
+
+#novelTitle {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+#startButtonContainer {
+  text-align: center;
+}
+
+#novelSubtitle {
+  text-align: center;
+}
+
+#author {
+  position: absolute;
+  bottom: 32px;
+  font-weight: 200;
+  right: 0;
+  left: 0;
+}
+
+#storyContent {
+  margin-top: 64px;
+  padding-right: 32px;
+  text-align: justify;
+  line-height: 1.5;
+  height: 75%;
+  overflow-y: auto;
+}
+
+.player {
+  color: rgb(196, 253, 241);
+}
+
+.voice {
+  color: rgb(177, 176, 255);
+}
+
+.mother {
+  color: rgb(180, 168, 124);
+}
+
+.normalText {
+  color: rgb(199, 202, 205);
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.dialogueDesc {
+  color: rgb(128, 128, 128);
+  font-style: italic;
+}
+
+#fool {
+  height: 150px;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(26, 26, 26);
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(96, 96, 96);
+  border-radius: 5px;
+}
